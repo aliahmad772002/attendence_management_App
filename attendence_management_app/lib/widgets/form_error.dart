@@ -1,6 +1,5 @@
 import 'package:attendence_management_app/utils/constants.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class FormError extends StatelessWidget {
   const FormError({
@@ -24,7 +23,11 @@ class FormError extends StatelessWidget {
   Row formErrorText({required String error}) {
     return Row(
       children: [
-       Icon(Icons.error_outline, color: kPrimaryColor, size: 20,),
+        Icon(
+          Icons.error_outline,
+          color: kPrimaryColor,
+          size: 20,
+        ),
         const SizedBox(
           width: 10,
         ),

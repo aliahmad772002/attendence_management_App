@@ -24,7 +24,7 @@ class _AttendanceRadioButtonState extends State<AttendanceRadioButton> {
             onChanged: (value) {
               setState(() {
                 _attendance = value;
-                widget.onChanged(_attendance); // Notify the parent widget of the change
+                widget.onChanged(_attendance);
               });
             },
           ),
@@ -37,7 +37,7 @@ class _AttendanceRadioButtonState extends State<AttendanceRadioButton> {
             onChanged: (value) {
               setState(() {
                 _attendance = value;
-                widget.onChanged(_attendance); // Notify the parent widget of the change
+                widget.onChanged(_attendance);
               });
             },
           ),

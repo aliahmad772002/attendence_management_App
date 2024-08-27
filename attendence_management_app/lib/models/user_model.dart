@@ -6,15 +6,14 @@ class UserModel {
   String password;
   String rollNo;
 
-  UserModel(
-      {required this.uid,
-      required this.name,
-      required this.email,
-      required this.profilePicture,
-      required this.password,
-        required this.rollNo,
-
-      });
+  UserModel({
+    required this.uid,
+    required this.name,
+    required this.email,
+    required this.profilePicture,
+    required this.password,
+    required this.rollNo,
+  });
 
   factory UserModel.fromMap(Map<String, dynamic> map) {
     return UserModel(

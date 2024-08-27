@@ -1,7 +1,6 @@
 import 'package:attendence_management_app/controllers/auth_controller.dart';
-import 'package:attendence_management_app/view/admin/admin_dashboard.dart';
-import 'package:attendence_management_app/view/auth/login_screen.dart';
-import 'package:attendence_management_app/view/auth/selection_screen.dart';
+import 'package:attendence_management_app/utils/theme.dart';
+import 'package:attendence_management_app/view/splashscreen/splashscreen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -25,12 +24,13 @@ void main() async {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'Flutter Demo',
-      home: const SelectionScreen(),
+      debugShowCheckedModeBanner: false,
+      theme: AppTheme.lightTheme(context),
+      title: 'Stellar Attendence System',
+      home: const Splash_Screen(),
     );
   }
 }
